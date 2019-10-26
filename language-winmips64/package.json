@@ -1,7 +1,7 @@
 {
   "name": "language-winmips64",
   "version": "0.0.0",
-  "description": "WinMips64 language support in Atom",
+  "description": "Mips64 language support in Atom for .s files",
   "engines": {
     "atom": "*"
   },
