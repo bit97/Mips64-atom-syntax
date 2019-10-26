@@ -1,0 +1,82 @@
+'scopeName': 'source.winmips64'
+'name': 'WinMips64'
+'fileTypes': ['s']
+
+'patterns': [
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name' : 'constant.numeric.winmips64'
+  },
+  {
+    'match': '\\.\\b(data|text|code)\\b'
+    'name' : 'entity.name.section.winmips64'
+  },
+  {
+    'match': '\\.\\b(org|space|asciiz|ascii|align|word|byte|word32|word16|double)\\b'
+    'name': 'storage.modifier.winmips64'
+  },
+  {
+    'match': '\\b(r|R)([0-9]|[1-2][0-9]|3[0-1])\\b'
+    'name' : 'variable.parameter.winmips64'
+  },
+  {
+    'match': '\\$([0-9]|[1-2][0-9]|3[0-1])\\b'
+    'name' : 'variable.parameter.winmips64'
+  },
+  {
+    'match': '\\b(f|F)([0-9]|[1-2][0-9]|3[0-1])\\b'
+    'name' : 'variable.parameter.winmips64'
+  },
+  {
+    'match': '\\b(halt|nop)\\b'
+    'name' : 'keyword.control.winmips64'
+  },
+  {
+    'match': '\\b(lb|lbu|sb|lh|lhu|sh|lw|lwu|sw|ld|sd|l.d|s.d|lui)\\b'
+    'name': 'keyword.operator.assignment.winmips64'
+  },
+  {
+    'match': '\\b(daddi|daddui|dadd|daddu|dsub|dsubu|dmul|dmulu|ddiv|ddivu|add.d|sub.d|mul.d|div.d)\\b'
+    'name': 'keyword.operator.arithmetic.winmips64'
+  },
+  {
+    'match': '\\b(and|or|xor|andi|ori|xori)\\b'
+    'name' : 'keyword.operator.logical'
+  },
+  {
+    'match': '\\b(slt|sltu|slti|sltiu)\\b'
+    'name' : 'keyword.control.winmips64'
+  },
+  {
+    'match': '\\b(beq|bne|beqz|bnez|j|jr|jal|jalr)\\b'
+    'name' : 'keyword.control.winmips64'
+  },
+  {
+    'match': '\\b(dsll|dsrl|dsra|dsllv|dsrlv|dsrav)\\b'
+    'name' : 'keyword.operator.arithmetic.winmips64'
+  },
+  {
+    'match': '\\b(movz|movn|mov.d|mtc1|mfc1)\\b'
+    'name' : 'keyword.operator.assignment.winmips64'
+  },
+  {
+    'match': '\\b(cvt.d.l|cvt.l.d|c.lt.d|c.le.d|c.eq.d|bc1f|bc1t)\\b'
+    'name' : 'keyword.control.winmips64'
+  },
+  {
+    'match': '\\$(((3[01])|([12]?[0-9])|[0-9])|zero|at|v[01]|a[0-3]|s[0-7]|t[0-9]|k[01]|gp|sp|fp|ra)'
+    'name': 'variable.parameter.winmips64'
+  },
+  {
+    'match': '\"'
+    'name' : 'string.ssraw'
+  },
+  {
+    'match': '\\b[\\w]+\\b:'
+    'name' : 'entity.name.tag.winmips64'
+  },
+  {
+    'match': ';.*'
+    'name' : 'comment.line.character.winmips64'
+  }
+]

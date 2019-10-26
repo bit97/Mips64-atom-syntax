@@ -1,0 +1,17 @@
+{
+  "name": "language-winmips64",
+  "version": "0.0.0",
+  "description": "WinMips64 language support in Atom",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bit97/Mips64-atom-syntax"
+  },
+  "bugs": {
+    "url": "https://github.com/bit97/Mips64-atom-syntax/issues"
+  },
+  "license": "MIT"
+}
